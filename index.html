@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Towers of Hanoi | Visualizer</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <!-- Background Glow -->
+  <div class="glow glow-1"></div>
+  <div class="glow glow-2"></div>
+
+  <!-- INTRO SECTION -->
+  <section id="intro">
+    <h1>Towers of Hanoi</h1>
+    <p class="subtitle">An Interactive Recursive Algorithm Visualizer</p>
+
+    <div class="card">
+      <p>
+        Towers of Hanoi is a classic problem that demonstrates the power of
+        <span class="highlight">recursion</span>.
+        The goal is to move all disks from the source rod to the destination rod
+        following strict rules.
+      </p>
+
+      <button id="openVisualizer">Launch Visualizer</button>
+    </div>
+  </section>
+
+  <!-- VISUALIZER SECTION -->
+  <section id="visualizer" class="hidden">
+
+    <div class="info-box">
+      <h3>Live Explanation</h3>
+      <p id="explanation">Enter the number of disks and start the visualization.</p>
+    </div>
+
+    <div class="tower-area">
+      <div class="rod" id="Source"><span>Source</span></div>
+      <div class="rod" id="Auxiliary"><span>Auxiliary</span></div>
+      <div class="rod" id="Destination"><span>Destination</span></div>
+    </div>
+
+    <div class="controls">
+      <input type="number" id="diskCount" min="1" max="6" placeholder="Disks">
+      <button id="start">Start</button>
+      <button id="reset">Reset</button>
+    </div>
+
+    <div class="complexity">
+      <h3>Time Complexity</h3>
+      <p>Formula: <span class="highlight">2ⁿ − 1</span></p>
+      <p id="moves">Total Moves: —</p>
+      <p>Complexity: <span class="highlight">O(2ⁿ)</span></p>
+    </div>
+
+  </section>
+
+  <script src="script.js"></script>
+</body>
+</html>
