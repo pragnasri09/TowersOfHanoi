@@ -30,7 +30,7 @@ Space Complexity: **O(n)** (due to recursion stack)
 
 
 ## 🛠️ Technologies Used
-- Programming Language: (Java / Python / C / C++ – update accordingly)
+- Programming Language: (HTML,CSS,JavaScript – update accordingly)
 - Recursion
 - Basic Console Input/Output
 
